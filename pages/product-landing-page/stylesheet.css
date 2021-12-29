@@ -1,0 +1,140 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 25%;
+  padding: 1em;
+}
+
+body {
+  background-color: #051622;
+  color: #deb992;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 10vw;
+}
+
+#header {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 1em 10vw;
+  text-align: center;
+}
+
+#header-img {
+  z-index: 2;
+  position: fixed;
+  height: 2em;
+  top: 0;
+  left: 0;
+  filter: invert(1);
+  padding: 1em 0;
+}
+
+#title {
+  color: #fff;
+  margin: 2em 0 0 0;
+}
+
+#title + h2 {
+  font-size: 1em;
+}
+
+#description {
+  color: #fff;
+}
+
+#nav-bar {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #051622;
+  width: 100vw;
+  line-height: 2em;
+  box-shadow: 0 0 1em #deb992;
+  padding: 1em 0;
+}
+
+.nav-link {
+  color: #1ba098;
+  text-decoration: none;
+}
+
+.nav-link:visited {
+  color: #1ba098;
+}
+
+#video-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+#video-container::after {
+  display: block;
+  content: "";
+  padding-top: 56.25%;
+}
+
+#video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#form {
+  text-align: center;
+  margin: 1em 0;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#email {
+  width: 544px;
+  border: none;
+  border-radius: 0.5em;
+}
+
+#submit {
+  border: none;
+  height: 2em;
+  width: 6em;
+  border-radius: 1em;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: #deb992;
+  box-shadow: 0 0 0.5em #deb992;
+}
+
+#submit:active {
+  box-shadow: 0 0 1em #deb992;
+  color: #fff;
+}
+
+@media screen and (max-width: 1067px) {
+  .column {
+    flex: 50%;
+  }
+
+  #header-img {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 1em;
+  }
+
+  #nav-bar {
+    padding: 2em 0 0 0;
+  }
+
+  #email {
+    width: 50vw;
+  }
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>Gaming Survey</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+  <header>
+    <h1 id="title">Gaming Survey</h1>
+
+    <p id="description">A gaming survey by Shane Beaumont</p>
+  </header>
+
+  <div id="main">
+    <main>
+      <form id="survey-form">
+        <div id="name-email">
+          <label for="name" id="name-label" class="bold">Name</label><br>
+
+          <input type="text" id="name" class="input" name="name" placeholder="Required" required><br><br>
+
+          <label for="email" id="email-label" class="bold">Email</label><br>
+
+          <input type="email" id="email" class="input" name="email" placeholder="Required" required><br><br>
+        </div <label for="number" id="number-label" class="bold">Age (18+)</label><br>
+
+        <input type="number" id="number" class="input" min="18" max="122" name="number" placeholder="Optional"><br><br>
+
+        <label for="dropdown" id="dropdown-label" class="bold">Favourite Gaming Genre</label><br>
+
+        <select id="dropdown" name="genre">
+          <option value="rpg">Role-Playing (RPG) / Adventure</option>
+          <option value="story">Story Driven</option>
+          <option value="action">Action / Shooter / Fighting</option>
+          <option value="horror">Horror / Survival</option>
+          <option value="stealth">Stealth</option>
+          <option value="racing">Racing</option>
+          <option value="strategy">Strategy</option>
+          <option value="sports">Sports</option>
+        </select>
+
+        <p class="bold">How often do you play games?</p>
+
+        <div class="selectables">
+          <input type="radio" id="monthly-or-less" name="frequency" value="monthly-or-less">
+
+          <label for="monthly-or-less">Once a month or less</label><br>
+
+          <input type="radio" id="weekly" name="frequency" value="weekly">
+
+          <label for="weekly">Around once a week</label><br>
+
+          <input type="radio" id="often" name="frequency" value="often">
+
+          <label for="often">Once every few days</label><br>
+
+          <input type="radio" id="daily" name="frequency" value="daily">
+
+          <label for="daily">Usually every day</label>
+        </div>
+
+        <p class="bold">Which of these games have you played?</p>
+
+        <div class="selectables">
+          <input type="checkbox" id="skyrim" name="played" value="skyrim">
+
+          <label for="skyrim">The Elder Scrolls V: Skyrim</label><br>
+
+          <input type="checkbox" id="new-vegas" name="played" value="new-vegas">
+
+          <label for="new-vegas">Fallout: New Vegas</label><br>
+
+          <input type="checkbox" id="gtav" name="played" value="gtav">
+
+          <label for="gtav">Grand Theft Auto V</label><br>
+
+          <input type="checkbox" id="witcher" name="played" value="witcher">
+
+          <label for="witcher">The Witcher 3: Wild Hunt</label><br>
+
+          <input type="checkbox" id="lis" name="played" value="lis">
+
+          <label for="lis">Life is Strange</label><br>
+
+          <input type="checkbox" id="doom" name="played" value="doom">
+
+          <label for="doom">DOOM (2016)</label><br>
+
+          <input type="checkbox" id="soma" name="played" value="soma">
+
+          <label for="soma">SOMA</label><br>
+
+          <input type="checkbox" id="outlast" name="played" value="outlast">
+
+          <label for="outlast">Outlast</label><br>
+        </div>
+
+        <p>Played any of these games? Maybe you would like to tell me about your experience with them, or other games you have played? Let me know which games have had an impact on your life, and what made them so great!</p><br>
+
+        <div id="comment-div">
+          <textarea id="comment" name="comment"></textarea>
+        </div>
+
+        <div id="submit-div">
+          <input type="submit" id="submit">
+        </div>
+
+      </form>
+    </main>
+  </div>
+</body>
+
+</html>

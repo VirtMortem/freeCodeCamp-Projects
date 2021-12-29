@@ -1,0 +1,118 @@
+body {
+  background-color: #3b4252;
+  color: #eceff4;
+}
+
+header {
+  padding: 0 5vw;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3em;
+  color: #3b4252;
+  background-color: #eceff4;
+  max-width: 720px;
+  margin: 0.5em auto;
+  border-radius: 2em;
+  line-height: 1.5em;
+}
+
+header > p {
+  text-align: center;
+  margin: 1.5em auto;
+}
+
+#main {
+  padding: 0 5vw;
+}
+
+main {
+  background-color: #2e3440;
+  margin: 0 auto 1em auto;
+  max-width: 1080px;
+  padding: 3em 5vw;
+  border-radius: 2em;
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.input {
+  background-color: #eceff4;
+  color: #2e3440;
+  border: none;
+  padding: 0.5em;
+  border-radius: 1em;
+  text-align: center;
+  min-width: 64px;
+}
+
+#name-email {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+#name,
+#email {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#dropdown {
+  background-color: #eceff4;
+  color: #2e3440;
+  border: none;
+  padding: 0.5em;
+  border-radius: 1em;
+  text-align: center;
+}
+
+.selectables {
+  text-align: left;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+#comment {
+  resize: vertical;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 10em;
+  background-color: #434c5e;
+  color: #eceff4;
+  border: none;
+  border-radius: 2em;
+  padding: 1em;
+}
+
+#submit-div {
+  padding: 1em 0 0 0;
+}
+
+#submit {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  background-color: #eceff4;
+  color: #2e3440;
+  border-radius: 1em;
+  height: 30px;
+  width: 100px;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+#submit:hover {
+  background-color: #4c566a;
+  color: #eceff4;
+  cursor: pointer;
+}
+
+#submit:active {
+  height: 26px;
+  width: 90px;
+  margin: 2px auto;
+}

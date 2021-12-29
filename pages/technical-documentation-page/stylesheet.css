@@ -1,0 +1,98 @@
+body {
+  background-color: #423557;
+  color: #fff;
+}
+
+header {
+  background-color: #355742;
+  border-radius: 1em;
+  padding: 0 1em;
+}
+
+#title {
+  max-width: 480px;
+  height: auto;
+  border-radius: 25px;
+  margin: 0 auto;
+  line-height: 50px;
+  text-align: center;
+}
+
+#navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  line-height: 6.66667vh;
+}
+
+#navbar-header {
+  font-weight: bold;
+  border-radius: 3.33334vh;
+  text-align: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  display: block;
+  padding: 0 1em;
+  border-radius: 3.33334vh;
+}
+
+.nav-link:link {
+  color: #fff;
+}
+
+.nav-link:visited {
+  color: #fff;
+}
+
+.nav-link:hover {
+  background-color: #355742;
+  color: #fff;
+}
+
+main {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+li {
+  margin: 1em 0;
+}
+
+@media screen and (max-width: 1596px) {
+  main {
+    margin: 0 16.96932vw 0 271px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  main {
+    margin: 0 40px 0 271px;
+  }
+}
+
+@media screen and (max-width: 1052px) {
+  #title {
+    margin: 0 auto 0 271px;
+  }
+}
+
+@media screen and (max-width: 781px) {
+  #navbar {
+    display: none;
+  }
+  #title {
+    margin: 0 auto;
+  }
+  main {
+    margin: 0 40px;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  #title {
+    margin: 0 40px;
+  }
+}
